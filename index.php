@@ -17,7 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
 <script defer src="<?php bloginfo( 'template_url' ); ?>/assets/svg-with-js/js/fontawesome-all.js"></script>
 
 
@@ -139,6 +139,17 @@ endif;
 	</div>
 
 </section>
+
+<div class="footerinfo">
+	<?php 
+	$phoneNum = get_field('phone_number', 'option');
+	$email = get_field('email', 'option');
+	$spam = antispambot($email);
+
+	echo $phoneNum.' | <a href="mailto:'.$spam.'">'.$spam.'</a>';
+	
+	 ?>
+</div>
 
 <?php wp_footer(); ?>
 
