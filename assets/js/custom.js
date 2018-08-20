@@ -8,10 +8,15 @@
 jQuery(document).ready(function ($) {
 
 
-	$('.overlay').hover(function(){
-	    $(this).addClass('active');
+	$('.company').hover(function(){
+	    $(this).find('.overlay').addClass('active');
 	},function(){
-	    $(this).removeClass('active');
+	    $(this).find('.overlay').removeClass('active');
+	});
+	$('.company').hover(function(){
+	    $(this).find('.desc').addClass('active');
+	},function(){
+	    $(this).find('.desc').removeClass('active');
 	});
 
 	

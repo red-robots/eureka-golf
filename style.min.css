@@ -1821,13 +1821,19 @@ section.header .sitedesc{width:100%;float:left;color:#fff}
 }section.companies{width:100%;float:left}
 section.companies .company{width:100%;float:left;position:relative}
 @media screen and (min-width:600px){section.companies .company{width:50%;border:4px solid #fff}
-}section.companies .company .overlay{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.6);opacity:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:all ease .2s;transition:all ease .2s}
+}section.companies .company .overlay{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.6);opacity:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:all ease .2s;transition:all ease .2s;z-index:1}
 section.companies .company .overlay.active{opacity:0}
 section.companies .company .overlay .logo{width:60%;margin:0 auto}
 section.companies .company .overlay .logo img{width:100%}
 section.companies .company .img{width:100%;position:relative;line-height:0}
 section.companies .company .img img{width:100%}
-section.companies .company .desc{width:100%;height:100%;position:absolute;top:0;left:0;color:#fff;padding:5%;line-height:1.2}
+section.companies .company .desc{width:100%;height:auto;position:absolute;z-index:10;top:20%;left:0;color:#fff;padding:5%;line-height:1.2;text-align:center;font-size:8vw;background-color:rgba(0,0,0,0.7);-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transition:all ease .4s;transition:all ease .4s}
+@media screen and (min-width:600px){section.companies .company .desc{font-size:4vw}
+}section.companies .company .desc p{margin:0 0 20px 0}
+section.companies .company .desc.active{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
+a.button{width:auto;position:relative;z-index:100000;display:inline-block;padding:15px 25px;background-color:#ebb95e;border:3px solid #fff;color:#0b492b;margin:20px 0 0 0;font-size:4vw;text-decoration:none;-webkit-transition:all ease .2s;transition:all ease .2s;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1)}
+@media screen and (min-width:600px){a.button{font-size:2vw}
+}a.button:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 section.footer{padding:5%}
 section.footer .footer-desc{color:#fff}
 section.footer .footer-desc h3{font-size:8vw;margin:20px 0}

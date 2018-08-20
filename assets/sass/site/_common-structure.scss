@@ -144,8 +144,10 @@ section.companies {
 			flex-direction: column;
 			justify-content: center;
 			@include transition(all ease .2s);
+			z-index: 1;
 			&.active {
 				opacity: 0;
+				// z-index: 1;
 			}
 			.logo {
 				width: 60%;
@@ -165,14 +167,53 @@ section.companies {
 		}
 		.desc {
 			width: 100%;
-			height: 100%;
+			height:auto;
 			position: absolute;
-			top: 0;
+			z-index: 10;
+			top: 20%;
 			left: 0;
 			color: #fff;
 			padding:5%;
 			line-height: 1.2;
+			text-align: center;
+			font-size: 8vw;
+			background-color: rgba(#000, .7);
+			// opacity: 0;
+			transform: scale(0);
+			@include transition(all ease .4s);
+			@media screen and (min-width: $tabwidth) {
+				font-size: 4vw;
+			}
+			p {
+				margin: 0 0 20px 0;
+			}
+			&.active {
+				// opacity: 1;
+				transform: scale(1);
+				// z-index: 1;
+			}
 		}
+	}
+}
+a.button {
+	width: auto;
+	position: relative;
+	z-index: 100000;
+	display: inline-block;
+	padding: 15px 25px;
+	background-color: $color-yellow;
+	border: 3px solid #fff;
+	color: $color-green;
+	margin: 20px 0 0 0;
+	font-size: 4vw;
+	text-decoration: none;
+	@include transition(all ease .2s);
+	transform: scale(1);
+	@media screen and (min-width: $tabwidth) {
+		font-size: 2vw;
+	}
+	&:hover {
+		transform: scale(1.1);
 	}
 }
 section.footer {

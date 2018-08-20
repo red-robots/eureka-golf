@@ -34,18 +34,22 @@ if ( have_posts() ) : the_post();
 	$logo_ggm = get_field('logo_ggm');
 	$background_image_ggm = get_field('background_image_ggm');
 	$info_ggm = get_field('info_ggm');
+	$link_ggm = get_field('website_ggm');
 
 	$logo_nhor = get_field('logo_nhor');
 	$background_image_nhor = get_field('background_image_nhor');
 	$info_nhor = get_field('info_nhor');
+	$link_nhor = get_field('website_nhor');
 
 	$logo_gt = get_field('logo_gt');
 	$background_image_gt = get_field('background_image_gt');
 	$info_gt = get_field('info_gt');
+	$link_gt = get_field('website_gt');
 
 	$logo_hot = get_field('logo_hot');
 	$background_image_hot = get_field('background_image_hot');
 	$info_hot = get_field('info_hot');
+	$link_hot = get_field('website_hot');
 
 	$title = get_field('title');
 	$description = get_field('description');
@@ -81,6 +85,9 @@ endif;
 		</div>
 		<div class="desc">
 			<?php echo $info_ggm; ?>
+			<?php if($link_ggm ){ ?>
+				<a class="button" target="_blank" href="<?php echo $link_ggm; ?>">Visit Site</a>
+			<?php } ?>
 		</div>
 		<div class="overlay">
 			<div class="logo">
@@ -94,6 +101,9 @@ endif;
 		</div>
 		<div class="desc">
 			<?php echo $info_nhor; ?>
+			<?php if($link_nhor ){ ?>
+				<a class="button" target="_blank" href="<?php echo $link_nhor; ?>">Visit Site</a>
+			<?php } ?>
 		</div>
 		<div class="overlay">
 			<div class="logo">
@@ -107,6 +117,9 @@ endif;
 		</div>
 		<div class="desc">
 			<?php echo $info_gt; ?>
+			<?php if($link_gt ){ ?>
+				<a class="button" target="_blank" href="<?php echo $link_gt; ?>">Visit Site</a>
+			<?php } ?>
 		</div>
 		<div class="overlay">
 			<div class="logo">
@@ -120,6 +133,9 @@ endif;
 		</div>
 		<div class="desc">
 			<?php echo $info_hot; ?>
+			<?php if($link_hot ){ ?>
+				<a class="button" target="_blank" href="<?php echo $link_hot; ?>">Visit Site</a>
+			<?php } ?>
 		</div>
 		<div class="overlay">
 			<div class="logo">
