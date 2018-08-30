@@ -78,71 +78,90 @@ endif;
 	</div>
 </section>
 
+<section class="divider  wow fadeInU"  data-wow-duration="2s">
+	<h2>Our Divisions</h2>
+</section>
+
+
 <section class="companies">
-	<div class="ggm company">
-		<div class="img">
-			<img src="<?php echo $background_image_ggm['url']; ?>" alt="<?php echo $background_image_ggm['alt']; ?>">
-		</div>
-		<div class="desc">
-			<?php echo $info_ggm; ?>
-			<?php if($link_ggm ){ ?>
-				<a class="button" target="_blank" href="<?php echo $link_ggm; ?>">Visit Site</a>
-			<?php } ?>
-		</div>
-		<div class="overlay">
-			<div class="logo">
-				<img src="<?php echo $logo_ggm['url']; ?>" alt="<?php echo $logo_ggm['alt']; ?>">
+	<div class="ggm company wow fadeInUp" data-wow-duration="2s">
+		<a class="" target="_blank" href="<?php echo $link_ggm; ?>">
+			<div class="img">
+				<img src="<?php echo $background_image_ggm['url']; ?>" alt="<?php echo $background_image_ggm['alt']; ?>">
 			</div>
-		</div>
-	</div>
-	<div class="ggm company">
-		<div class="img">
-			<img src="<?php echo $background_image_nhor['url']; ?>" alt="<?php echo $background_image_nhor['alt']; ?>">
-		</div>
-		<div class="desc">
-			<?php echo $info_nhor; ?>
-			<?php if($link_nhor ){ ?>
-				<a class="button" target="_blank" href="<?php echo $link_nhor; ?>">Visit Site</a>
-			<?php } ?>
-		</div>
-		<div class="overlay">
-			<div class="logo">
-				<img src="<?php echo $logo_nhor['url']; ?>" alt="<?php echo $logo_nhor['alt']; ?>">
+			<div class="desc">
+				<?php //echo $info_ggm; ?>
+				<?php if($link_ggm ){ ?>
+					Visit Site
+				<?php } ?>
 			</div>
-		</div>
-	</div>
-	<div class="ggm company">
-		<div class="img">
-			<img src="<?php echo $background_image_gt['url']; ?>" alt="<?php echo $background_image_gt['alt']; ?>">
-		</div>
-		<div class="desc">
-			<?php echo $info_gt; ?>
-			<?php if($link_gt ){ ?>
-				<a class="button" target="_blank" href="<?php echo $link_gt; ?>">Visit Site</a>
-			<?php } ?>
-		</div>
-		<div class="overlay">
-			<div class="logo">
-				<img src="<?php echo $logo_gt['url']; ?>" alt="<?php echo $logo_gt['alt']; ?>">
+			<div class="overlay">
+				<div class="logo">
+					<img src="<?php echo $logo_ggm['url']; ?>" alt="<?php echo $logo_ggm['alt']; ?>">
+				</div>
+				<div class="small-desc"><?php echo $info_ggm; ?></div>
 			</div>
-		</div>
+		</a>
 	</div>
-	<div class="ggm company">
-		<div class="img">
-			<img src="<?php echo $background_image_hot['url']; ?>" alt="<?php echo $background_image_hot['alt']; ?>">
-		</div>
-		<div class="desc">
-			<?php echo $info_hot; ?>
-			<?php if($link_hot ){ ?>
-				<a class="button" target="_blank" href="<?php echo $link_hot; ?>">Visit Site</a>
-			<?php } ?>
-		</div>
-		<div class="overlay">
-			<div class="logo">
-				<img src="<?php echo $logo_hot['url']; ?>" alt="<?php echo $logo_hot['alt']; ?>">
+	<div class="ggm company wow fadeInUp" data-wow-duration="2s">
+		<a class="" target="_blank" href="<?php echo $link_hot; ?>">
+			<div class="img">
+				<img src="<?php echo $background_image_hot['url']; ?>" alt="<?php echo $background_image_hot['alt']; ?>">
 			</div>
-		</div>
+			<div class="desc">
+				<?php //echo $info_hot; ?>
+				<?php if($link_hot ){ ?>
+					Visit Site
+				<?php } ?>
+			</div>
+			<div class="overlay">
+				<div class="logo">
+					<img src="<?php echo $logo_hot['url']; ?>" alt="<?php echo $logo_hot['alt']; ?>">
+				</div>
+				<div class="small-desc"><?php echo $info_hot; ?></div>
+			</div>
+		</a>
 	</div>
+	<div class="ggm company wow fadeInUp" data-wow-duration="2s">
+		<a class="" target="_blank" href="<?php echo $link_gt; ?>">
+			<div class="img">
+				<img src="<?php echo $background_image_gt['url']; ?>" alt="<?php echo $background_image_gt['alt']; ?>">
+			</div>
+			<div class="desc">
+				<?php //echo $info_gt; ?>
+				<?php if($link_gt ){ ?>
+					Visit Site
+				<?php } ?>
+			</div>
+			<div class="overlay">
+				<div class="logo">
+					<img src="<?php echo $logo_gt['url']; ?>" alt="<?php echo $logo_gt['alt']; ?>">
+				</div>
+				<div class="small-desc"><?php echo $info_gt; ?></div>
+			</div>
+		</a>
+	</div>
+	<div class="ggm company wow fadeInUp" data-wow-duration="2s">
+		<a class="" target="_blank" href="<?php echo $link_nhor; ?>">
+			<div class="img">
+				<img src="<?php echo $background_image_nhor['url']; ?>" alt="<?php echo $background_image_nhor['alt']; ?>">
+			</div>
+			<div class="desc">
+				<?php //echo $info_nhor; ?>
+				<?php if($link_nhor ){ ?>
+					Visit Site
+				<?php } ?>
+			</div>
+			<div class="overlay">
+				<div class="logo">
+					<img src="<?php echo $logo_nhor['url']; ?>" alt="<?php echo $logo_nhor['alt']; ?>">
+				</div>
+				<div class="small-desc"><?php echo $info_nhor; ?></div>
+			</div>
+		</a>
+	</div>
+	
+	
 </section>
 <section class="footer parallax-window" data-parallax="scroll" data-image-src="<?php echo $footer_background_photo['url']; ?>">
 	<div class="logo-e">

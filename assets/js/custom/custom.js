@@ -8,16 +8,16 @@
 jQuery(document).ready(function ($) {
 
 
-	$('.company').hover(function(){
-	    $(this).find('.overlay').addClass('active');
-	},function(){
-	    $(this).find('.overlay').removeClass('active');
-	});
-	$('.company').hover(function(){
-	    $(this).find('.desc').addClass('active');
-	},function(){
-	    $(this).find('.desc').removeClass('active');
-	});
+	// $('.company').hover(function(){
+	//     $(this).find('.overlay').addClass('active');
+	// },function(){
+	//     $(this).find('.overlay').removeClass('active');
+	// });
+	// $('.company').hover(function(){
+	//     $(this).find('.desc').addClass('active');
+	// },function(){
+	//     $(this).find('.desc').removeClass('active');
+	// });
 
 	
 	/*
