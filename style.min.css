@@ -1808,7 +1808,8 @@ body{font-family:"Libre Baskerville",serif}
 }@media screen and (min-width:1200px){}
 .site-footer{width:100%;clear:both}
 .parallax-window{min-height:500px;background:transparent}
-section.header{width:100%;position:relative;padding:5%}
+@media screen and (min-width:1450px){.parallax-window{min-height:700px}
+}section.header{width:100%;position:relative;padding:5%}
 section.header .logo{width:60%;margin:0 auto}
 @media screen and (min-width:600px){section.header .logo{width:28%;float:left}
 }section.header .logo img{width:100%}

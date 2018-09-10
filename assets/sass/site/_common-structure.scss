@@ -77,6 +77,10 @@ body {
 .parallax-window {
     min-height: 500px;
     background: transparent;
+
+    @media screen and (min-width: $largewidth) {
+    	min-height: 700px;
+    }
 }
 section.header {
 	width: 100%;
