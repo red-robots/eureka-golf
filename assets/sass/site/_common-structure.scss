@@ -75,9 +75,17 @@ body {
 	clear: both;
 }
 .parallax-window {
-    min-height: 400px;
+    min-height: 300px;
     background: transparent;
-
+    @media screen and (min-width: $tabwidth) {
+    	min-height: 300px;
+    }
+    @media screen and (min-width: $midwidth) {
+    	min-height: 300px;
+    }
+    @media screen and (min-width: $deskwidth) {
+    	min-height: 400px;
+    }
     @media screen and (min-width: $largewidth) {
     	min-height: 700px;
     }
@@ -93,7 +101,7 @@ section.header {
 	 	align-items: center;
 	 }
 	.logo {
-		width: 60%;
+		width: 30%;
 		margin: 0 auto;
 		@media screen and (min-width: $tabwidth) {
 			width: 20%;
@@ -116,8 +124,10 @@ section.header {
 			font-size: 7vw;
 			line-height: 1.2;
 			margin: 20px 0 20px 0;
+			text-align: center;
 			@media screen and (min-width: $tabwidth) {
 				font-size: 4vw;
+				text-align: left;
 			}
 		}
 		.taglines {
@@ -183,7 +193,10 @@ section.companies {
 	float: left;
 	background-color: #fff;
 	@media screen and (min-width: $tabwidth) {
-		margin: -170px auto 0 auto;
+		margin: -50px auto 0 auto;
+	}
+	@media screen and (min-width: $midwidth) {
+		margin: -150px auto 0 auto;
 	}
 	.company {
 		width: 100%;
@@ -212,7 +225,7 @@ section.companies {
 			opacity: 1;
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			justify-content: flex-end;
 			@include transition(all ease .2s);
 			z-index: 1;
 			&.active {
@@ -231,6 +244,15 @@ section.companies {
 				text-align: center;
 				color: #fff;
 				padding: 20px 0;
+				@media screen and (min-width: $tabwidth) {
+					padding: 5px 0;
+				}
+				@media screen and (min-width: $midwidth) {
+					padding: 10px 0;
+				}
+				@media screen and (min-width: $midwidth) {
+					padding: 20px 0;
+				}
 			}
 		}
 		.img {

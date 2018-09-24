@@ -1807,17 +1807,20 @@ body{font-family:"Libre Baskerville",serif}
 @media screen and (min-width:600px){.logo a,h1.logo a{width:300px}
 }@media screen and (min-width:1200px){}
 .site-footer{width:100%;clear:both}
-.parallax-window{min-height:400px;background:transparent}
-@media screen and (min-width:1450px){.parallax-window{min-height:700px}
+.parallax-window{min-height:300px;background:transparent}
+@media screen and (min-width:600px){.parallax-window{min-height:300px}
+}@media screen and (min-width:900px){.parallax-window{min-height:300px}
+}@media screen and (min-width:1200px){.parallax-window{min-height:400px}
+}@media screen and (min-width:1450px){.parallax-window{min-height:700px}
 }section.header{width:100%;position:relative;padding:0 5% 5% 5%}
 @media screen and (min-width:600px){section.header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
-}section.header .logo{width:60%;margin:0 auto}
+}section.header .logo{width:30%;margin:0 auto}
 @media screen and (min-width:600px){section.header .logo{width:20%;float:left;margin:0}
 }section.header .logo img{width:100%}
 section.header .sitedesc{width:100%;float:left;color:#fff}
 @media screen and (min-width:600px){section.header .sitedesc{width:50%;margin-left:5%}
-}section.header .sitedesc h1{font-size:7vw;line-height:1.2;margin:20px 0 20px 0}
-@media screen and (min-width:600px){section.header .sitedesc h1{font-size:4vw}
+}section.header .sitedesc h1{font-size:7vw;line-height:1.2;margin:20px 0 20px 0;text-align:center}
+@media screen and (min-width:600px){section.header .sitedesc h1{font-size:4vw;text-align:left}
 }section.header .sitedesc .taglines{width:100%;float:left;font-size:4vw}
 @media screen and (min-width:600px){section.header .sitedesc .taglines{font-size:2vw}
 }section.divider{width:100%;background-color:#fff;clear:both;overflow:visible;text-align:center;padding:80px 0}
@@ -1827,16 +1830,20 @@ section.divider h2:after{content:'';border-bottom:3px solid #0b492b;position:abs
 @media screen and (min-width:600px){section.divider h2{font-size:4vw}
 }section.divider .our-divisions{width:90%;background-color:#fff}
 section.companies{width:100%;float:left;background-color:#fff}
-@media screen and (min-width:600px){section.companies{margin:-170px auto 0 auto}
+@media screen and (min-width:600px){section.companies{margin:-50px auto 0 auto}
+}@media screen and (min-width:900px){section.companies{margin:-150px auto 0 auto}
 }section.companies .company{width:100%;float:left;position:relative;overflow:hidden;margin:0 0 30px 0}
 @media screen and (min-width:600px){section.companies .company{width:50%;margin:0;border:20px solid #fff}
 }section.companies .company:hover .img{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
-section.companies .company .overlay{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.6);opacity:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-transition:all ease .2s;transition:all ease .2s;z-index:1}
+section.companies .company .overlay{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.6);opacity:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-transition:all ease .2s;transition:all ease .2s;z-index:1}
 section.companies .company .overlay.active{opacity:0}
 section.companies .company .overlay .logo{width:40%;margin:0 auto}
 section.companies .company .overlay .logo img{width:100%}
 section.companies .company .overlay .small-desc{width:100%;text-align:center;color:#fff;padding:20px 0}
-section.companies .company .img{width:100%;position:relative;line-height:0;-webkit-transition:all ease 3s;transition:all ease 3s}
+@media screen and (min-width:600px){section.companies .company .overlay .small-desc{padding:5px 0}
+}@media screen and (min-width:900px){section.companies .company .overlay .small-desc{padding:10px 0}
+}@media screen and (min-width:900px){section.companies .company .overlay .small-desc{padding:20px 0}
+}section.companies .company .img{width:100%;position:relative;line-height:0;-webkit-transition:all ease 3s;transition:all ease 3s}
 section.companies .company .img img{width:100%}
 section.companies .company .desc{width:100%;height:auto;position:absolute;z-index:10;top:20%;left:0;color:#fff;padding:5%;line-height:1.2;text-align:center;font-size:8vw;background-color:rgba(0,0,0,0.7);-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transition:all ease .4s;transition:all ease .4s}
 @media screen and (min-width:600px){section.companies .company .desc{font-size:4vw}
