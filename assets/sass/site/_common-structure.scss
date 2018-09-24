@@ -75,7 +75,7 @@ body {
 	clear: both;
 }
 .parallax-window {
-    min-height: 500px;
+    min-height: 400px;
     background: transparent;
 
     @media screen and (min-width: $largewidth) {
@@ -85,13 +85,20 @@ body {
 section.header {
 	width: 100%;
 	position: relative;
-	padding: 5%;
+	padding: 0% 5% 5% 5%;
+	 @media screen and (min-width: $tabwidth) {
+	 	display: flex;
+	 	flex-direction: row;
+	 	justify-content: center;
+	 	align-items: center;
+	 }
 	.logo {
 		width: 60%;
 		margin: 0 auto;
 		@media screen and (min-width: $tabwidth) {
-			width: 28%;
+			width: 20%;
 			float: left;
+			margin: 0;
 		}
 		img {
 			width: 100%;
@@ -102,15 +109,15 @@ section.header {
 		float: left;
 		color: #fff;
 		@media screen and (min-width: $tabwidth) {
-			width: 60%;
+			width: 50%;
 			margin-left: 5%;
 		}
 		h1 {
-			font-size: 8vw;
+			font-size: 7vw;
 			line-height: 1.2;
 			margin: 20px 0 20px 0;
 			@media screen and (min-width: $tabwidth) {
-				font-size: 5vw;
+				font-size: 4vw;
 			}
 		}
 		.taglines {
@@ -131,6 +138,17 @@ section.divider {
 	
 	clear: both;
 	overflow: visible;
+	.overlap-box {
+		width: 80%;
+		margin: -150px auto 0 auto;
+		padding: 40px;
+		background-color: #fff;
+		position: relative;
+		z-index: 100;
+		@media screen and (min-width: $tabwidth) {
+
+		}
+	}
 	h2 {
 		font-size: 8vw;
 		width: auto;
@@ -164,6 +182,9 @@ section.companies {
 	width: 100%;
 	float: left;
 	background-color: #fff;
+	@media screen and (min-width: $tabwidth) {
+		margin: -170px auto 0 auto;
+	}
 	.company {
 		width: 100%;
 		float: left;
@@ -283,13 +304,13 @@ section.footer {
 			font-size: 8vw;
 			margin: 20px 0;
 			@media screen and (min-width: $tabwidth) {
-				font-size: 5vw;
+				font-size: 3vw;
 			}
 		}
 		p {
 			font-size: 4vw;
 			@media screen and (min-width: $tabwidth) {
-				font-size: 2vw;
+				font-size: 1.4vw;
 			}
 		}
 	}
@@ -303,7 +324,7 @@ section.footer {
 	padding: 20px 0;
 	font-size: 3vw;
 	@media screen and (min-width: $tabwidth) {
-		font-size: 2vw;
+		font-size: 1.4vw;
 	}
 	@media screen and (min-width: $deskwidth) {
 		// font-size: 1vw;

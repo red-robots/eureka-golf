@@ -72,14 +72,17 @@ endif;
 	</div>
 	<div class="sitedesc">
 		<h1><?php echo $main_title; ?></h1>
-		<div class="taglines">
-			<?php echo $sub_taglines; ?>
-		</div>
 	</div>
 </section>
 
 <section class="divider  wow fadeInU"  data-wow-duration="2s">
-	<h2>Our Divisions</h2>
+	<div class="overlap-box">
+		<h2>Our Divisions</h2>
+		<div class="taglines">
+			<?php echo $sub_taglines; ?>
+		</div>
+	</div>
+	
 </section>
 
 
