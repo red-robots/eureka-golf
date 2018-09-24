@@ -45,9 +45,9 @@ body {
 }
 
 /* Logo */
-.logo , h1.logo {
+.elogo , h1.elogo {
 	width: 300px;
-	background-image: url(images/logo.png);	
+	// background-image: url(images/logo.png);	
 	margin: 10px auto;
 
 	@media screen and (min-width: $tabwidth) {
@@ -100,7 +100,7 @@ section.header {
 	 	justify-content: center;
 	 	align-items: center;
 	 }
-	.logo {
+	.elogo {
 		width: 30%;
 		margin: 0 auto;
 		@media screen and (min-width: $tabwidth) {
@@ -232,7 +232,7 @@ section.companies {
 				opacity: 0;
 				// z-index: 1;
 			}
-			.logo {
+			.elogo {
 				width: 40%;
 				margin: 0 auto;
 				img {

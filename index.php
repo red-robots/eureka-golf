@@ -67,7 +67,7 @@ endif;
 <body <?php body_class(); ?>>
 
 <section class="header parallax-window" data-parallax="scroll" data-image-src="<?php echo $header_image['url']; ?>">
-	<div class="logo">
+	<div class="elogo">
 		<img src="<?php echo $logo['url']; ?>">
 	</div>
 	<div class="sitedesc">
@@ -99,7 +99,7 @@ endif;
 				<?php } ?>
 			</div>
 			<div class="overlay">
-				<div class="logo">
+				<div class="elogo">
 					<img src="<?php echo $logo_ggm['url']; ?>" alt="<?php echo $logo_ggm['alt']; ?>">
 				</div>
 				<div class="small-desc"><?php echo $info_ggm; ?></div>
@@ -118,7 +118,7 @@ endif;
 				<?php } ?>
 			</div>
 			<div class="overlay">
-				<div class="logo">
+				<div class="elogo">
 					<img src="<?php echo $logo_hot['url']; ?>" alt="<?php echo $logo_hot['alt']; ?>">
 				</div>
 				<div class="small-desc"><?php echo $info_hot; ?></div>
@@ -137,7 +137,7 @@ endif;
 				<?php } ?>
 			</div>
 			<div class="overlay">
-				<div class="logo">
+				<div class="elogo">
 					<img src="<?php echo $logo_gt['url']; ?>" alt="<?php echo $logo_gt['alt']; ?>">
 				</div>
 				<div class="small-desc"><?php echo $info_gt; ?></div>
@@ -156,7 +156,7 @@ endif;
 				<?php } ?>
 			</div>
 			<div class="overlay">
-				<div class="logo">
+				<div class="elogo">
 					<img src="<?php echo $logo_nhor['url']; ?>" alt="<?php echo $logo_nhor['alt']; ?>">
 				</div>
 				<div class="small-desc"><?php echo $info_nhor; ?></div>
