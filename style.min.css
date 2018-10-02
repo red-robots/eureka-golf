@@ -1824,15 +1824,17 @@ section.header .sitedesc{width:100%;float:left;color:#fff}
 }section.header .sitedesc .taglines{width:100%;float:left;font-size:4vw}
 @media screen and (min-width:600px){section.header .sitedesc .taglines{font-size:2vw}
 }section.divider{width:100%;background-color:#fff;clear:both;overflow:visible;text-align:center;padding:80px 0}
-section.divider .overlap-box{width:80%;margin:-150px auto 0 auto;padding:40px;background-color:#fff;position:relative;z-index:100}
+section.divider .overlap-box{width:80%;max-width:1150px;margin:-150px auto 0 auto;padding:40px;background-color:#fff;position:relative;z-index:100}
 section.divider h2{font-size:8vw;width:auto;display:inline-block;position:relative}
 section.divider h2:after{content:'';border-bottom:3px solid #0b492b;position:absolute;left:40%;bottom:-20px;width:25%}
 @media screen and (min-width:600px){section.divider h2{font-size:4vw}
 }section.divider .our-divisions{width:90%;background-color:#fff}
 section.companies{width:100%;float:left;background-color:#fff}
 @media screen and (min-width:600px){section.companies{margin:-50px auto 0 auto}
-}@media screen and (min-width:900px){section.companies{margin:-150px auto 0 auto}
-}section.companies .company{width:100%;float:left;position:relative;overflow:hidden;margin:0 0 30px 0}
+}@media screen and (min-width:900px){section.companies{margin:-150px auto 20px auto}
+}@media screen and (min-width:1450px){section.companies{padding-bottom:40px}
+}section.companies .compwrap{max-width:1300px;margin:0 auto}
+section.companies .company{width:100%;float:left;position:relative;overflow:hidden;margin:0 0 30px 0}
 @media screen and (min-width:600px){section.companies .company{width:50%;margin:0;border:20px solid #fff}
 }section.companies .company:hover .img{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 section.companies .company .overlay{width:100%;height:100%;position:absolute;top:0;left:0;background-color:rgba(0,0,0,0.6);opacity:1;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;-webkit-transition:all ease .2s;transition:all ease .2s;z-index:1}
@@ -1853,13 +1855,16 @@ a.button{width:auto;position:relative;z-index:100000;display:inline-block;paddin
 @media screen and (min-width:600px){a.button{font-size:2vw}
 }a.button:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 section.footer{padding:5%}
-section.footer .footer-desc{color:#fff}
+section.footer .footer-desc{color:#fff;max-width:1250px;margin:0 auto}
 section.footer .footer-desc h3{font-size:8vw;margin:20px 0}
 @media screen and (min-width:600px){section.footer .footer-desc h3{font-size:3vw}
+}@media screen and (min-width:1450px){section.footer .footer-desc h3{font-size:2vw}
 }section.footer .footer-desc p{font-size:4vw}
 @media screen and (min-width:600px){section.footer .footer-desc p{font-size:1.4vw}
+}@media screen and (min-width:1450px){section.footer .footer-desc p{font-size:1vw}
 }.footerinfo{width:100%;background-color:black;color:#fff;text-align:center;padding:20px 0;font-size:3vw}
 @media screen and (min-width:600px){.footerinfo{font-size:1.4vw}
+}@media screen and (min-width:1200px){.footerinfo{font-size:1vw}
 }.footerinfo a{color:#fff;text-decoration:none}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
