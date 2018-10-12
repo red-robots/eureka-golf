@@ -1829,7 +1829,7 @@ section.divider h2{font-size:8vw;width:auto;display:inline-block;position:relati
 section.divider h2:after{content:'';border-bottom:3px solid #0b492b;position:absolute;left:40%;bottom:-20px;width:25%}
 @media screen and (min-width:600px){section.divider h2{font-size:4vw}
 }section.divider .our-divisions{width:90%;background-color:#fff}
-section.companies{width:100%;float:left;background-color:#fff}
+section.companies{width:100%;margin:-100px auto 0 auto;float:left;background-color:#fff}
 @media screen and (min-width:600px){section.companies{margin:-50px auto 0 auto}
 }@media screen and (min-width:900px){section.companies{margin:-150px auto 20px auto}
 }@media screen and (min-width:1450px){section.companies{padding-bottom:40px}
