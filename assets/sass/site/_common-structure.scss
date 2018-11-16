@@ -229,6 +229,12 @@ section.companies {
 		@media screen and (min-width: $tabwidth) {
 			width: 50%;
 			margin: 0;
+			border: 5px solid #fff;
+		}
+		@media screen and (min-width: $midwidth) {
+			border: 10px solid #fff;
+		}
+		@media screen and (min-width: $deskwidth) {
 			border: 20px solid #fff;
 		}
 		&:hover {
