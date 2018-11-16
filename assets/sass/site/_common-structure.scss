@@ -99,7 +99,7 @@ section.header {
 	width: 100%;
 	position: relative;
 	padding: 0% 5% 5% 5%;
-	 @media screen and (min-width: $tabwidth) {
+	 @media screen and (min-width: $small) {
 	 	display: flex;
 	 	flex-direction: row;
 	 	justify-content: center;
@@ -107,11 +107,13 @@ section.header {
 	 }
 	.elogo {
 		width: 30%;
-		margin: 0 auto;
-		@media screen and (min-width: $tabwidth) {
+		margin: 0px auto 0  auto;
+		padding-top: 10px;
+		@media screen and (min-width: $small) {
 			width: 20%;
 			float: left;
 			margin: 0;
+			padding: 0;
 		}
 		img {
 			width: 100%;
@@ -121,7 +123,7 @@ section.header {
 		width: 100%;
 		float: left;
 		color: #fff;
-		@media screen and (min-width: $tabwidth) {
+		@media screen and (min-width: $small) {
 			width: 50%;
 			margin-left: 5%;
 		}
@@ -130,7 +132,7 @@ section.header {
 			line-height: 1.2;
 			margin: 20px 0 20px 0;
 			text-align: center;
-			@media screen and (min-width: $tabwidth) {
+			@media screen and (min-width: $small) {
 				font-size: 4vw;
 				text-align: left;
 			}
@@ -139,7 +141,7 @@ section.header {
 			width: 100%;
 			float: left;
 			font-size: 4vw;
-			@media screen and (min-width: $tabwidth) {
+			@media screen and (min-width: $small) {
 				font-size: 2vw;
 			}
 		
@@ -204,11 +206,13 @@ section.companies {
 		margin: -50px auto 0 auto;
 	}
 	@media screen and (min-width: $midwidth) {
-		margin: -150px auto 20px auto;
-		
+		margin: -100px auto 20px auto;
+	}
+	@media screen and (min-width: $deskwidth) {
+		margin: -140px auto 20px auto;
 	}
 	@media screen and (min-width: $largewidth) {
-		
+		margin: -150px auto 20px auto;
 		padding-bottom: 40px;
 	}
 	.compwrap {
@@ -262,10 +266,10 @@ section.companies {
 				color: #fff;
 				padding: 5px 0;
 				@media screen and (min-width: $tabwidth) {
-					padding: 5px 0;
+					padding: 0px 0;
 				}
 				@media screen and (min-width: $midwidth) {
-					padding: 10px 0;
+					padding: 0px 0;
 				}
 				@media screen and (min-width: $midwidth) {
 					padding: 20px 0;
